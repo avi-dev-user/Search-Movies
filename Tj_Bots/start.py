@@ -125,7 +125,7 @@ async def callback_handler(client, query: CallbackQuery):
             "• <code>/newindex [ID]</code> - מעקב אחרי תוכן חדש בערוץ.\n"
             "• <code>/channels</code> - ניהול ערוצים במעקב.\n\n"
             "<b>◉ מערכת:</b>\n"
-            "• <code>/clean</code> - אשף ניקוי נתונים.\n"
+            "• <code>/clean</code> - ניקוי נתונים מהדאטה בייס.\n"
             "• <code>/broadcast [-f]</code> - שידור למנויים.\n"
             "• <code>/broadcast_groups</code> - שידור לקבוצות.\n"
             "• <code>/restart</code> - הפעלה מחדש."
