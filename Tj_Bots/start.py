@@ -90,9 +90,9 @@ async def callback_handler(client, query: CallbackQuery):
     
     elif data == "help":
         btns = [
+            [InlineKeyboardButton('◉ תוספות (Extra) ◉', callback_data='help_extra')],
             [InlineKeyboardButton('◉ הגדרות קבוצה ◉', callback_data='help_settings'), InlineKeyboardButton('◉ זכויות יוצרים ◉', callback_data='help_copyright')],
             [InlineKeyboardButton('◉ סטטיסטיקות ◉', callback_data='help_stats'), InlineKeyboardButton('◉ מדריך שימוש ◉', callback_data='help_guide')],
-            [InlineKeyboardButton('◉ תוספות (Extra) ◉', callback_data='help_extra')],
             [InlineKeyboardButton('חזרה ⋟', callback_data='home')]
         ]
         
