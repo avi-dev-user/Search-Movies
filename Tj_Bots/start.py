@@ -105,9 +105,9 @@ async def callback_handler(client, query: CallbackQuery):
         txt = (
             "<b><u>פקודות נוספות (Extra Tools):</u></b>\n\n"
             "<b>◉ פונט טקסט:</b>\n"
-            "• <code>/font [טקסט]</code> - הופך טקסט באנגלית לפונטים מיוחדים.\n\n"
+            "• <code>/font</code> [טקסט] - הופך טקסט באנגלית לפונטים מיוחדים.\n\n"
             "<b>◉ שיתוף טקסט:</b>\n"
-            "• <code>/share [טקסט]</code> - יוצר קישור שיתוף מהיר לטקסט שכתבתם.\n\n"
+            "• <code>/share</code> [טקסט]</code> - יוצר קישור שיתוף מהיר לטקסט שכתבתם.\n\n"
             "<b>◉ תמלול הודעות (TTS):</b>\n"
             "• <code>/tts</code> - הגיבו על הודעת טקסט, והבוט ישלח לכם אותה בהודעה קולית.\n\n"
             "<b>◉ העלאת טקסט (Paste):</b>\n"
@@ -121,12 +121,12 @@ async def callback_handler(client, query: CallbackQuery):
         txt = (
             "<b><u>לוח בקרה למנהלים:</u></b>\n\n"
             "<b>◉ ניהול תוכן:</b>\n"
-            "• <code>/index [link] - [start]</code> - הוספת קבצים מערוץ (לפי טווח).\n"
-            "• <code>/newindex [ID]</code> - מעקב אחרי תוכן חדש בערוץ.\n"
+            "• <code>/index</code> [link] - [start] - הוספת קבצים מערוץ (לפי טווח).\n"
+            "• <code>/newindex</code> [ID] - מעקב אחרי תוכן חדש בערוץ.\n"
             "• <code>/channels</code> - ניהול ערוצים במעקב.\n\n"
             "<b>◉ מערכת:</b>\n"
             "• <code>/clean</code> - ניקוי נתונים מהדאטה בייס.\n"
-            "• <code>/broadcast [-f]</code> - שידור למנויים.\n"
+            "• <code>/broadcast</code> - שידור למנויים, ניתן להוסיף </code>-f</code> כדי לשדר עם תג הועבר.\n"
             "• <code>/broadcast_groups</code> - שידור לקבוצות.\n"
             "• <code>/restart</code> - הפעלה מחדש."
         )
