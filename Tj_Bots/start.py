@@ -1,3 +1,4 @@
+import asyncio
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from config import UPDATE_CHANNEL, REQUEST_GROUP, PHOTO_URL, ADMINS, LOG_CHANNEL
@@ -34,7 +35,17 @@ async def start_command(client, message):
                     await message.reply("❌ הקובץ נמחק מהמקור או שאין לי גישה אליו.", quote=True)
             return
 
+        anim_msg = await message.reply_text("👋", quote=True)
+        await asyncio.sleep(0.5)
+        
+        await anim_msg.edit_text("💻")
+        await asyncio.sleep(0.5)
+        
+        await anim_msg.edit_text("⚡")
+        await asyncio.sleep(1.0)
+        
         await send_home_message(client, message)
+        await anim_msg.delete()
 
     elif message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         await message.reply("היי! אני מוכן לחיפוש סרטים 🎬", quote=True)
@@ -176,3 +187,5 @@ async def callback_handler(client, query: CallbackQuery):
             pass
     elif data == "noop":
         await query.answer()
+
+
