@@ -5,7 +5,6 @@ from config import MONGO_URI, DB_NAME
 class Database:
     def __init__(self):
         self._client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URI)
-        # אתחול ראשוני כדי למנוע שגיאות NoneType
         self.set_db_name(DB_NAME)
 
     def set_db_name(self, name):
@@ -105,7 +104,6 @@ class Database:
         result = await self.groups.delete_many({})
         return result.deleted_count
 
-    # --- מחיקה חכמה לשגיאות ---
     async def delete_file_by_unique_id(self, unique_id):
         await self.files.delete_one({'file_unique_id': unique_id})
 
