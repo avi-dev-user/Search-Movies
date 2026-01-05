@@ -21,7 +21,6 @@ async def start_bot():
     print("🤖 הבוט מתחיל לעבוד... (מצב שקט)")
     await app.start()
     
-    # בדיקת חזרה מריסטארט
     if os.path.exists("restart.txt"):
         try:
             with open("restart.txt", "r") as f:
