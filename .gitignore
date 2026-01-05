@@ -12,3 +12,11 @@ venv/
 env/
 
 *.log
+*.session
+*.session-journal
+nohup.out
+restart.txt
+*.session
+*.session-journal
+nohup.out
+restart.txt
