@@ -16,14 +16,14 @@ async def list_channels(client, message):
     keyboard = []
     for chat_id in channels:
         keyboard.append([
-            InlineKeyboardButton(f"ערוץ: {chat_id}", callback_data="noop"),
+            InlineKeyboardButton(f"{chat_id}", callback_data="noop"),
             InlineKeyboardButton("🗑️ הסר", callback_data=f"ask_rem_ch_{chat_id}")
         ])
     
     keyboard.append([InlineKeyboardButton("❌ סגור", callback_data="clean_cancel")])
     
     await message.reply(
-        f"📋 **רשימת ערוצים במעקב ({len(channels)})**\nלחץ על 'הסר' כדי להפסיק לעקוב.",
+        f"📋 **רשימת ערוצים במעקב ({len(channels)})**",
         reply_markup=InlineKeyboardMarkup(keyboard),
         quote=True
     )
