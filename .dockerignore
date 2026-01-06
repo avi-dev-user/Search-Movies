@@ -1,8 +1,32 @@
-__pycache__
-venv
+# Git
 .git
-.env
-.DS_Store
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
 *.pyc
+*.pyo
+venv/
+env/
+
+# Environment
+.env
+*.env
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Session & logs
+*.session
+*.session-journal
+*.log
 restart.txt
-config.py
+
+# Temp files
+temp/
+
+# Documentation (not needed in image)
+README.md

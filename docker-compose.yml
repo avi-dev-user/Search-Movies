@@ -1,11 +1,35 @@
 version: '3.8'
 
 services:
-  tjmoviebot:
+  bot:
     build: .
-    container_name: tj_movie_bot
-    restart: always
+    container_name: search-movies-bot
+    restart: unless-stopped
     env_file:
       - .env
     volumes:
-      - .:/app
+      - ./:/app
+    depends_on:
+      - mongodb
+    networks:
+      - bot-network
+
+  mongodb:
+    image: mongo:6.0
+    container_name: search-movies-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: TjBotDB
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - bot-network
+
+networks:
+  bot-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:

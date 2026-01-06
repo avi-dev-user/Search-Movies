@@ -1,22 +1,45 @@
+# Environment & Secrets
 .env
-config.py
+*.env
+!.env.example
 secrets.json
 
+# OS Files
 .DS_Store
 Thumbs.db
 
-node_modules/
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environments
 venv/
 env/
+ENV/
+.venv
 
+# Dependencies
+node_modules/
+
+# Logs
 *.log
+nohup.out
+
+# Telegram Session Files
 *.session
 *.session-journal
-nohup.out
+
+# Temporary Files
 restart.txt
-*.session
-*.session-journal
-nohup.out
-restart.txt
+temp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
