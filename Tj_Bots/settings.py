@@ -72,3 +72,6 @@ async def settings_callback(client, query: CallbackQuery):
         
     await query.answer("ההגדרה עודכנה ✅")
     await send_settings_panel(chat_id, query.message, is_edit=True)
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
