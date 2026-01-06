@@ -174,3 +174,6 @@ async def style(c, m):
         await m.message.edit_text(f"`{new_text}`", reply_markup=m.message.reply_markup)
     except Exception as e:
         print(e)
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
