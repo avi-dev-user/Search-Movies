@@ -19,3 +19,6 @@ async def is_admin(client, chat_id, user_id):
         return member.status.name in ["OWNER", "ADMINISTRATOR"]
     except:
         return False
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
