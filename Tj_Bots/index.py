@@ -160,3 +160,6 @@ async def live_watcher(client, message):
         'chat_id': message.chat.id, 'message_id': message.id, 'caption': message.caption or ""
     }
     await db.save_file(data)
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
