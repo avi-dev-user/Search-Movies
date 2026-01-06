@@ -11,3 +11,6 @@ async def restart_bot(client, message):
         f.write(f"{message.chat.id} {msg.id}")
     
     os.execl(sys.executable, sys.executable, "bot.py")
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
