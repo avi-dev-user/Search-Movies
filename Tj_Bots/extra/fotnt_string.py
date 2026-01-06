@@ -2360,3 +2360,6 @@ class Fonts:
         for i, j in style.items():
             text = text.replace(i, j)
         return text
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
