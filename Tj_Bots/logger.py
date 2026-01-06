@@ -55,3 +55,6 @@ async def global_logger(client, message):
                 await client.send_message(LOG_CHANNEL, log_text, parse_mode=enums.ParseMode.HTML)
             except Exception as e:
                 print(f"Error sending group log: {e}")
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
