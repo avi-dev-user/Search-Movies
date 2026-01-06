@@ -75,3 +75,6 @@ async def paste_handler(client, message):
         await status_msg.edit(text, disable_web_page_preview=True)
     else:
         await status_msg.edit(f"❌ שגיאה בהעלאה: {result['error']}")
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
