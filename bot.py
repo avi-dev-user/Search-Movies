@@ -18,7 +18,7 @@ app = Client(
 )
 
 async def start_bot():
-    print("🤖 הבוט מתחיל לעבוד... (מצב שקט)")
+    print("🤖 הבוט מתחיל לעבוד...")
     await app.start()
     
     if os.path.exists("restart.txt"):
@@ -48,4 +48,5 @@ if __name__ == "__main__":
     app.run(start_bot())
 
 
-
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
