@@ -12,11 +12,13 @@ async def stats_command(client, message):
     
     text = (
         "**📊 סטטיסטיקות הבוט 📊**\n\n"
-        f"> 📂 **מספר קבצים:** `{files_count}`\n"
-        f"> 👤 **מספר משתמשים:** `{users_count}`\n"
-        f"> 👥 **מספר קבוצות:** `{groups_count}`"
+        f"📂 **מספר קבצים:** `{files_count}`\n"
+        f"👤 **מספר משתמשים:** `{users_count}`\n"
+        f"👥 **מספר קבוצות:** `{groups_count}`"
     )
     
     await msg.delete()
     await message.reply_photo(PHOTO_URL, caption=text, quote=True)
 
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
