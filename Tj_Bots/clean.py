@@ -81,3 +81,6 @@ async def solve_clean_callback(client, query):
 @Client.on_callback_query(filters.regex("clean_cancel"))
 async def clean_cancel(client, query):
     await query.message.delete()
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
