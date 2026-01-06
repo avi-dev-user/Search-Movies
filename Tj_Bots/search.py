@@ -104,3 +104,6 @@ async def send_results_page(client, message, results, page, query, settings, is_
         await message.edit_text(text, reply_markup=markup, disable_web_page_preview=True)
     else:
         await message.reply_text(text, reply_markup=markup, disable_web_page_preview=True, quote=True)
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
