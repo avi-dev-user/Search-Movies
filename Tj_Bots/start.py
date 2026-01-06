@@ -189,3 +189,5 @@ async def callback_handler(client, query: CallbackQuery):
         await query.answer()
 
 
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
