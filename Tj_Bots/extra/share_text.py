@@ -26,3 +26,6 @@ async def share_text_handler(client, message):
         quote=True,
         disable_web_page_preview=True
     )
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
