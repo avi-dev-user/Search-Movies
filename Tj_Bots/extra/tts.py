@@ -35,3 +35,6 @@ async def tts_handler(client, message):
         
     except Exception as e:
         await status.edit(f"❌ שגיאה: `{e}`")
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
