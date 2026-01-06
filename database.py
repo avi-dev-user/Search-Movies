@@ -112,3 +112,6 @@ class Database:
         return result.deleted_count
 
 db = Database()
+
+# הפרויקט נכתב + נבנה על ידי @BOSS1480 ופורסם בחינם,
+# אל תמכרו את ריפו בתשלום!!!
